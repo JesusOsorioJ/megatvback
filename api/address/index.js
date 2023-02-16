@@ -1,11 +1,12 @@
 const Router = require('express');
 
 const {
-    handlerAllAddress,
+    handlerAllAddress, handlerAllAddressBy
 } = require('./address.controller');
 
 const router = Router();
 
 router.get('/', handlerAllAddress);
+router.get('/:id', handlerAllAddressBy);
 
 module.exports = router;

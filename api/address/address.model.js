@@ -7,12 +7,12 @@ const AddressSchema = new mongoose.Schema(
             required: true,
             trim: true
         },
-        City: {
+        city: {
             type: String,
             required: true,
             trim: true,
         },
-        State: {
+        state: {
             type: String,
             required: true,
             trim: true
