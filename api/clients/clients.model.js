@@ -7,7 +7,7 @@ const ClientsSchema = new mongoose.Schema(
             required: true,
             trim: true
         },
-        secondName: {
+        secondname: {
             type: String,
             required: true,
             trim: true,
