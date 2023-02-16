@@ -1,7 +1,11 @@
 const ClientsModel = require('./clients.model');
 
-async function createClients() {
-  return await ClientsModel.find();
+async function createClients(body) {
+  return await ClientsModel.create(body);
 }
 
-module.exports = {createClients}
+async function getAllClients() {
+    return await ClientsModel.find();
+  }
+
+module.exports = {createClients, getAllClients}

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const AddressSchema = new mongoose.Schema(
     {
-        StreetAddress: {
+        street: {
             type: String,
             required: true,
             trim: true

@@ -3,6 +3,7 @@ const {
   } = require('./address.service');
 
 async function handlerAllAddress(req, res) {
+    console.log("pase ppor aqui")
     res.json(await getAllAdrress());
   }
 

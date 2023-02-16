@@ -2,13 +2,10 @@ const Router = require('express');
 
 const {
     handlerAllAddress,
-} = require('./clients.controller');
+} = require('./address.controller');
 
 const router = Router();
 
-router.get('/', handlerAllClients);
-router.get('/:id', handlerClientById);
-router.post('/', handlerCreateClient);
-router.patch('/:id', hasRole(['admin', 'client']), isSelf(), handlerUpdateClient);
+router.get('/', handlerAllAddress);
 
 module.exports = router;
