@@ -8,7 +8,7 @@ async function handlerCreateClient(req, res) {
     const client = await createClients(newClient);
     return res.status(201).json(client);
   } catch (error) {
-    return res.status(500).json(error);
+    return res.status(400).json(error);
   }
 }
 
